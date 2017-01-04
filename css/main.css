@@ -1,0 +1,41 @@
+@CHARSET "UTF-8";
+  /* Remove the navbar's default rounded borders and increase the bottom margin */
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */
+    .jumbotron {
+      margin-bottom: 0;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+   footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+   }
+    
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+     width: 100%;
+     height: 500px;	
+     margin: auto; 
+  }
+  .carousel-inner > .item > .carousel-caption > h3,p{
+    height:100%;
+    color: #565d51;
+    background-clip:content-box;
+  }
+  .panel{
+ 	margin-top: 30px;	
+  }
+  .list-group-item-primary {
+    color: rgb(255, 255, 255);
+    background-color: rgb(66, 139, 202);
+}
+
+	
+	.well .list-group {
+    margin-bottom: 0px;
+	}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+	
+	<script src="js/user-login.js"></script>
+	<link rel="stylesheet" href="css/homestyle.css">
+	<meta charset="utf-8">
+	<title>Filmathon</title>
+</head>
+<body background="img/Film-reel.jpeg" style="background-size: 1500px 1500px;">
+
+	<div id="menubar">
+		<div style="width: 15%; float: left">
+		<a href="#" ><img src="img/movies-icon.png" alt="Online Movie Store" style="padding-top: 5px" height='70%' width='30%' /></a>
+		</div>
+     <div style="width: 50%; float: left; padding-top: 10px">Filmathon.com</div>
+     </div> 
+	 
+	<div id="dialog"></div>
+
+
+<div id="signup-box">
+	<h1> Register Here</h1>
+	<form class="signupfirst" id="registerform" name="signupForm" onsubmit="return validateSignupForm()" action="" method="post">
+		<table>
+			<tr>
+				<td><label for="uname">Username:</label></td>
+				<td><input type="text" name="uname" id="uname" ></td>
+			</tr>
+			<tr>
+				<td><label for="pass">Password:</label></td>
+				<td><input type="password" name="pass" id="pass" ></td>
+			</tr>
+			<tr>
+				<td><label for="pass">Re-Enter Password:</label></td>
+				<td><input type="password" name="rePass" id="rePass" ></td>
+			</tr>
+			<tr>
+				<td><label for="myname">Name:</label></td>
+				<td><input type="text" name="myname" id="myname"></td>
+			</tr>
+			<tr>
+				<td><label for="email">Email:</label></td>
+				<td><input type="text" name="email" id="email"></td>
+			</tr>
+			<tr>
+				<td><label for="cardNo">Payment Card Number:</label></td>
+				<td><input type="text" name="cardNo" id="cardNo"></td>
+			</tr>
+			<tr>
+				<td><label for="CardName">Name On Card:</label></td>
+				<td><input type="text" name="cardName" id="cardName"></td>
+			</tr>
+			<tr>
+				<td><label for="expiryMonth">Card Expiry Month:</label></td>
+				<td><input type="text" name="expiryMonth" id="expiryMonth" maxlength="2"></td>
+			</tr>
+			<tr>
+				<td><label for="expiryYear">Card Expiry Year:</label></td>
+				<td><input type="text" name="expiryYear" id="expiryYear" maxlength="4"></td>
+			</tr>
+			<tr>
+				<td><label for="cvv">CVV:</label></td>
+				<td><input type="text" name="cvv" id="cvv" maxlength="3"></td>
+			</tr>
+		</table>
+		<center><input type="submit" id="submit-sign" value="Sign Up"></center>
+	</form>
+</div> 
+
+	
+	
+<div id="login-box">
+	<h1>User Login </h1>
+	<form class="signup" id="loginform">
+		<table>
+			<tr>
+				<td><label for="username">Username:</label></td>
+				<td><input type="text" name="username" id="username"></td>
+			</tr>
+			<tr>
+				<td><label for="password">Password:</label></td>
+				<td><input type="password" name="password" id="password"></td>
+			</tr>
+		</table>
+		<center><input type="submit" id="submit" value="Sign In"></center>
+	</form>
+
+</div>
+
+
+
+</body>
+</html>
